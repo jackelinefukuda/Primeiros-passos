@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align items</title>
+</head>
+
+<style>
+    .container{
+        max-width: 350px;
+        border: 1px solid black;
+        display: flex;
+    }
+
+    .item{
+        background-color: blueviolet;
+        margin: 5px;
+        color: white;
+        text-align: center;
+        flex: 1;
+    }
+
+    .flex{
+        flex: 1;
+    }
+
+    .center{
+        align-items: center;
+    }
+
+    .strech{
+        align-items: stretch;
+    }
+
+    .flex-start{
+        align-items: flex-start;
+    }
+
+    .flex-end{
+        align-items: flex-end;
+    }
+
+    .baseline{
+        align-items: baseline;
+    }
+
+    .column{
+        flex-direction: column;
+    }
+
+    .central{
+        height: 300px;
+        justify-content: center;
+    }
+
+    .central .item{
+        flex: 0;
+        padding: 20px;
+    }
+</style>
+<body>
+
+    <h2>row</h2>
+    <p>center</p>
+    <section class="container center flex">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item"> Item 3 mais algum texto.lopsom</div>
+    </section>
+
+    <p>strech</p>
+    <section class="container strech flex">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor dads dafhqe nfdadfaofj djoaidj noasdnaisd</div>
+        <div class="item"> Item 3 mais algum texto.lopsom</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container flex-start flex">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item"> Item 3 mais algum texto.lopsom</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container flex-end flex">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item"> Item 3 mais algum texto.lopsom</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline flex">
+        <div class="item"><br>1</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item"> Item 3 mais algum texto.lopsom</div>
+    </section>
+
+    <h2>row</h2>
+
+    <p>flex-start</p>
+    <section class="container flex-start flex column">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item"> Item 3 mais algum texto.lopsom</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container flex-end flex column">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item"> Item 3 mais algum texto.lopsom</div>
+    </section>
+
+    <p>center</p>
+    <section class="container center flex column">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item"> Item 3 mais algum texto.lopsom</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline flex column">
+        <div class="item"><br>1</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item"> Item 3 mais algum texto.lopsom</div>
+    </section>
+
+    <p>alinhamento central</p>
+    <section class="container central center">
+        <div class="item">Lorem ndadnfjknfjks
+            fadjfkfkfbakbf dbakjfb quey q jbrabli
+            lqjhdvasyudbehhg dqliduq ueq w uweqil 
+             qvweu eqlu weqj.
+        </div>
+    </section>
+
+</body>
+</html>
